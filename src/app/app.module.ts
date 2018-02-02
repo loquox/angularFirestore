@@ -10,6 +10,8 @@ import { AddTasksComponent } from './components/add-tasks/add-tasks.component';
 import {AngularFireModule} from 'angularfire2';
 import {AngularFirestoreModule} from 'angularfire2/firestore';
 
+import { TaskService} from './services/task.service';
+
 
 
 @NgModule({
@@ -28,7 +30,7 @@ import {AngularFirestoreModule} from 'angularfire2/firestore';
     
     
   ],
-  providers: [],
+  providers: [TaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
